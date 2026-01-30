@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <title>حماده الصعيدى</title>
+    <style>
+        body {
+            font-family: Arial, Tahoma;
+            background: linear-gradient(to right, #74ebd5, #9face6);
+            text-align: center;
+            direction: rtl;
+        }
+        .card {
+            background: white;
+            width: 90%;
+            max-width: 500px;
+            margin: 80px auto;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+        }
+        h1 {
+            color: #2c3e50;
+            font-size: 32px;
+        }
+        p {
+            color: #555;
+            font-size: 20px;
+        }
+        button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 16px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            background: #27ae60;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+<div class="card">
+    <h1>نورت يا عمو حماده 🌟</h1>
+    <p>أهلاً وسهلاً بيك في موقع حماده الصعيدى</p>
+
+    <button onclick="playSound()">🔊 تشغيل صوت الترحيب</button>
+</div>
+
+<audio id="welcomeSound">
+    <source src="welcome.mp3" type="audio/mpeg">
+    متصفحك لا يدعم الصوت
+</audio>
+
+<script>
+    function playSound() {
+        document.getElementById("welcomeSound").play();
+    }
+</script>
+
+</body>
+</html>
